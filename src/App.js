@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+const CurrencyConverter = () => {
 
-function App() {
+  const liczba = document.getElementById("pole".value);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div>
+      <h1>Przelicznik walut</h1>
+      <form>
+        <label>
+          kwota w zl:
+          <input />
+        </label>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <label>
+            waluta:
+            <select>
+              <option>eur</option>
+              <option>usd</option>
+            </select>
+          </label>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+        <button>przelicz</button>
+      </form> 
+
+      <input id="pole"></input>
+      <button onClick={if (liczba>0) ? document.getElementById("wynik").innerHTML ="dodatnia" : document.getElementById("wynik").innerHTML ="ujemna"}>sprawdz</button>
     </div>
   );
-}
+};
 
-export default App;
+export default CurrencyConverter;
