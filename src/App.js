@@ -3,7 +3,7 @@ const CurrencyConverter = () => {
 
   return (
     <div>
-      <h1>Przelicznik walut</h1>
+      <h1>Przelicznik walut - test</h1>
       <form>
         <label>
           kwota w zl:
