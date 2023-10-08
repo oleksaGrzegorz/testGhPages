@@ -1,6 +1,6 @@
 const CurrencyConverter = () => {
 
-  const liczba = document.getElementById("pole".value);
+
   return (
     <div>
       <h1>Przelicznik walut</h1>
@@ -22,8 +22,7 @@ const CurrencyConverter = () => {
         <button>przelicz</button>
       </form> 
 
-      <input id="pole"></input>
-      <button onClick={if (liczba>0) ? document.getElementById("wynik").innerHTML ="dodatnia" : document.getElementById("wynik").innerHTML ="ujemna"}>sprawdz</button>
+      
     </div>
   );
 };
