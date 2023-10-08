@@ -1,12 +1,17 @@
 import styled from "styled-components";
 
-const StyledButton = styled.button`
+const Button = styled.button`
   color: teal;
   background: white;
 `;
 
 function App() {
-  return <StyledButton>Przycisk</StyledButton>;
+  return (
+    <>
+      <Button>Przycisk</Button>
+      <Button>Przycisk</Button>
+    </>
+  );
 }
 
 export default App;
