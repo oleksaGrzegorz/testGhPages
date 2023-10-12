@@ -1,15 +1,10 @@
-import styled from "styled-components";
-
-const Button = styled.button`
-  color: teal;
-  background: white;
-`;
-
+import { useState } from "react";
 function App() {
+  const [counter, setCounter] = useState(0);
   return (
     <>
-      <Button>Przycisk</Button>
-      <Button>Przycisk</Button>
+      <button onClick={() => setCounter(counter => counter+1)}>+1</button>
+      <p>{counter}</p>
     </>
   );
 }
